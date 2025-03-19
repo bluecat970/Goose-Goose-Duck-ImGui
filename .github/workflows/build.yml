@@ -1,0 +1,14 @@
+name: Build Cheat 2
+on: [push]
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup MSVC
+      uses: microsoft/setup-msbuild@v1
+    - run: msbuild Goose-Goose-Duck-ImGui.sln /p:Configuration=Release /p:Platform=x64
+    - uses: actions/upload-artifact@v3
+      with:
+        name: cheat-binary
+        path: x64/Release/*.exe
