@@ -1,4 +1,4 @@
-name: Build Cheat2
+name: Build Cheat 2
 on: [push]
 jobs:
   build:
