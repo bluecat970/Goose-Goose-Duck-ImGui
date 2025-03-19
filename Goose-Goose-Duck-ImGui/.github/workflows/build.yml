@@ -12,3 +12,4 @@ jobs:
       with:
         name: cheat-binary
         path: x64/Release/*.exe
+
