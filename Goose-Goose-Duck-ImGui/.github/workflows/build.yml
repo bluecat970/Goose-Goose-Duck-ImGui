@@ -1,4 +1,4 @@
-name: Build Cheat
+name: Build Cheat2
 on: [push]
 jobs:
   build:
@@ -12,4 +12,3 @@ jobs:
       with:
         name: cheat-binary
         path: x64/Release/*.exe
-
